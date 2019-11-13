@@ -2,13 +2,16 @@ const readlineSync = require("readline-sync");
 
 let lowerBound = 1
 let upperBound = 0
-let sum = 0;
+let sum = 0
+
 
 while (lowerBound > upperBound) {
-    lowerBound = readlineSync.question("\nLower bound: ");
-    upperBound = readlineSync.question("Upper bound: \n");
+    lowerBound = Number(readlineSync.question("\nLower bound: "));
+    upperBound = Number(readlineSync.question("Upper bound: "));
+  }
 
-    if (lowerBound < upperBound && sum !== lowerBound) {
-      sum = upperBound - 1 + sum
-    }
+
+
+  for (let x = lowerBound; x < upperBound; x++) {
+      console.log(x);
   }
