@@ -10,12 +10,9 @@ let sum = 0;
 let x = 0;
 
 console.log();
-while (lowerBound > upperBound) {
+while (lowerBound > upperBound || lowerBound < MIN || upperBound > MAX || !Number.isInteger(lowerBound) || !Number.isInteger(upperBound)) {
   lowerBound = Number(readlineSync.question("Lower bound: "));
   upperBound = Number(readlineSync.question("Upper bound: "));
-  if (lowerBound < MIN || upperBound > MAX) {
-    console.log("Invalid.\n")
-}
 }
 
 if (lowerBound % 2 === 0) {
