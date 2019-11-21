@@ -1,10 +1,10 @@
-
 const readlineSync = require("readline-sync");
 
 const MAX = Number.MAX_SAFE_INTEGER;
 let n = 0
 
 console.log();
+
 do {
   n = Number(readlineSync.question("Non-negative integer: "));
 } while (n > MAX || !Number.isInteger(n) || n < 0);
