@@ -4,23 +4,22 @@ let integer = 0;
 
 let a = 0;
 let b = 1;
+let c = 1;
+
+console.log();
 
 while (integer > 78 || integer <= 0 || !Number.isInteger(integer)) {
   integer = Number(readlineSync.question("Non-negative integer: "));
 }
 
 
-
-for (let x = 0, x <= integer, x++){
-   a = b + c
-   c = b
-
-  b = b + a
-
+for (var i = 2; i <= integer; i++){
+  c = a + b;
+       a = b;
+       b = c;
 }
 
-console.log(b)
 
-//   Go there for the formula to the code
+c = (c).toLocaleString("en", { minimumFractionDigits: 0, maximumFractionDigits: 0});
 
-//   http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibFormula.html
+console.log("\n" + c + ".")
