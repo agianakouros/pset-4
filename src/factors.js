@@ -18,7 +18,7 @@ for (var i = 1; i <= number; i++) {
   if (number % i === 0) {
     string = string + i + ", "
     leftover = number / i
-      if (string.includes(", " + leftover) == false) {
+      if (string.includes(", " + leftover + ", ") == false) {
         string = string + leftover + ", "
 }     else if (string.includes(", " + leftover + ", ") == true) {
          string = string.substring(0, string.length - 2);
@@ -27,7 +27,6 @@ for (var i = 1; i <= number; i++) {
 }
 }
 }
-
 
 
 console.log(string);
