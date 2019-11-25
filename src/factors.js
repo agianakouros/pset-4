@@ -14,7 +14,7 @@ while (number <= 0 || number > MAX ||!Number.isInteger(number)); {
 }
 
 
-for (var i = 1; i <= number; i++) {
+for (var i = 1; i <= number / 2; i++) {
   if (number % i === 0) {
     string = string + i + ", "
     leftover = number / i
