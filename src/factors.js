@@ -30,3 +30,5 @@ for (var i = 1; i <= number / 2; i++) {
 
 
 console.log(string);
+
+//idk why this wont work but at this point man im just ready to go to bed

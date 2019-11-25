@@ -20,6 +20,10 @@ do {
 let creditCard2 = creditCard;
 let creditCard3 = creditCard;
 
+
+//this is where things get fun
+
+
 while (creditCard2 > 0) {
     if (creditCard2 > 0) {
        value = Math.floor((creditCard2 % 100) / 10);
